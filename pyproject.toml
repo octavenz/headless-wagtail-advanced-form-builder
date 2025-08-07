@@ -42,17 +42,15 @@ dependencies = [
     "Django>=4.2",
     "Wagtail>=6",
     "wagtailextraicons",
-    "django-ninja",  # Core requirement for headless API
-    "pydantic>=2.0",      # For schema validation
-    "psycopg2-binary",    # PostgreSQL adapter
+    "django-ninja",      # Core requirement for headless API
+    "pydantic>=2.0",     # For schema validation
+    "psycopg2-binary",   # PostgreSQL adapter for production
+    "django-recaptcha",  # For reCAPTCHA protection
+    "celery",            # For background email processing
+    "redis",             # For Celery backend
 ]
 
 [project.optional-dependencies]
-full = [
-    "django-recaptcha",  # For reCAPTCHA protection
-    "celery",           # For background email processing
-    "redis",            # For Celery backend
-]
 dev = [
     "django-extensions",
     "pytest",

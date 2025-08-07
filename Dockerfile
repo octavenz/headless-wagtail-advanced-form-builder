@@ -31,7 +31,7 @@ WORKDIR /app
 # Install Python dependencies
 COPY pyproject.toml README.md ./
 COPY src/ ./src/
-RUN pip install --no-cache-dir -e ".[full,dev]"
+RUN pip install --no-cache-dir -e ".[dev]"
 
 # Copy project files
 COPY . .

@@ -219,8 +219,8 @@ The complete documentation is available at [here](https://github.com/octavenz/he
 
 # 🆘 Getting Help
 
-- **🐛 Bug Reports**: [Issue Tracker](https://github.com/octavenz/headless-waf-builder/issues)
-- **💡 Feature Requests**: [GitHub Discussions](https://github.com/octavenz/headless-waf-builder/discussions)
+- **🐛 Bug Reports**: [Issue Tracker](https://github.com/octavenz/headless-wagtail-advanced-form-builder/issues)
+- **💡 Feature Requests**: [GitHub Discussions](https://github.com/octavenz/headless-wagtail-advanced-form-builder/discussions)
 
 # 👥 Authors
 

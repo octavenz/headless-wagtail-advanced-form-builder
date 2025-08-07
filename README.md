@@ -44,7 +44,7 @@ await fetch('/api/form_by_path/', {
 
 # Versions
 
-This package supports Wagtail 2, 4 and 6. There is currently no support for Wagtail 3.
+This package currently only supports Wagtail 6 above.
 
 ### Version 1.0.0
 

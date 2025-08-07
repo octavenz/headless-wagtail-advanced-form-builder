@@ -213,13 +213,7 @@ Get CSRF token for secure submissions
 
 # 📚 Documentation
 
-The complete documentation is available at [headless-waf-builder.readthedocs.io](https://headless-waf-builder.readthedocs.io/en/latest/)
-
-**Quick Links:**
-- [📖 API Documentation](https://headless-waf-builder.readthedocs.io/en/latest/headless/api/) - Complete API reference
-- [🚀 Getting Started](https://headless-waf-builder.readthedocs.io/en/latest/getting_started/installing/) - Installation and setup
-- [🎛️ Field Reference](https://headless-waf-builder.readthedocs.io/en/latest/fields/) - All available field types
-- [⚙️ Configuration](https://headless-waf-builder.readthedocs.io/en/latest/usage/settings/) - Advanced settings
+The complete documentation is available at [here](https://github.com/octavenz/headless-wagtail-advanced-form-builder/blob/master/docs/index.md)
 
 ---
 
@@ -227,11 +221,10 @@ The complete documentation is available at [headless-waf-builder.readthedocs.io]
 
 - **🐛 Bug Reports**: [Issue Tracker](https://github.com/octavenz/headless-waf-builder/issues)
 - **💡 Feature Requests**: [GitHub Discussions](https://github.com/octavenz/headless-waf-builder/discussions)
-- **📖 Documentation**: [ReadTheDocs](https://headless-waf-builder.readthedocs.io/)
 
 # 👥 Authors
 
-* Richard Blake ([Octave](https://octave.nz))
+* Richard Blake, Dan Brosnan & Vincent Tran ([Octave](https://octave.nz))
 
 # 📄 License
 

@@ -1,0 +1,16 @@
+*.pyc
+.idea
+.vscode
+/node_modules
+#/wagtail_advanced_form_builder/static
+/staticfiles
+npm-debug.log
+/dist
+wagtail_advanced_form_builder.egg-info
+*console.log
+build_test/settings/local/*
+
+# Docker
+*.sql
+docker-compose.override.yml.local
+/staticfiles

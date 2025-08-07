@@ -1,0 +1,12 @@
+# Override for local development
+services:
+  web:
+    volumes:
+      - .:/app
+    environment:
+      - DEBUG=1
+    # Override entrypoint for development to skip some steps
+    command: >
+      sh -c "python manage.py migrate --noinput &&
+             python manage.py collectstatic --noinput &&
+             python manage.py runserver 0.0.0.0:8000" 

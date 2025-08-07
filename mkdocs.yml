@@ -1,0 +1,53 @@
+site_name: Headless Wagtail Advanced Form Builder
+repo_url: https://github.com/octavenz/headless-wagtail-advanced-form-builder
+nav:
+    - Home: index.md
+    - Getting Started:
+        - Installation: getting_started/installing.md
+        - Quick Start: getting_started/out_of_the_box.md
+        - Custom Models: getting_started/using_your_own_page_models.md
+    - API Reference:
+        - REST API: headless/api.md
+    - Field Types:
+        - Basic Field: fields/basic_field.md
+        - Email Field: fields/email_field.md
+        - URL Field: fields/url_field.md
+        - Number Field: fields/number_field.md
+        - Multiline Field: fields/multi_line_field.md
+        - Hidden Field: fields/hidden_field.md
+        - Dropdown Field: fields/dropdown_field.md
+        - Radio Field: fields/radio_field.md
+        - Checkboxes Field: fields/checkboxes_field.md
+        - Checkbox Field: fields/checkbox_field.md
+        - Multiselect Field: fields/multi_select_field.md
+        - HTML Field: fields/html_field.md
+    - Contributing:
+        - How to Contribute: contributing/contributing.md
+theme:
+    name: material
+    palette:
+        # Palette toggle for light mode
+        - scheme: default
+          toggle:
+            icon: material/brightness-7 
+            name: Switch to dark mode
+        # Palette toggle for dark mode
+        - scheme: slate
+          toggle:
+            icon: material/brightness-4
+            name: Switch to light mode
+    features:
+        - navigation.tabs
+        - navigation.sections
+        - navigation.expand
+        - search.highlight
+        - search.share
+        - content.code.copy
+extra_css: [extra.css]
+markdown_extensions:
+    - codehilite
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+        alternate_style: true

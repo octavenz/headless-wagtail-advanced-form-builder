@@ -1,0 +1,47 @@
+services:
+  db:
+    image: postgres:14
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_DB: waf_pg_db
+      POSTGRES_USER: waf_pg_db
+      POSTGRES_PASSWORD: waffity
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  mailhog:
+    image: mailhog/mailhog:latest
+    ports:
+      - "1025:1025"  # SMTP server
+      - "8025:8025"  # Web UI
+
+  web:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_SETTINGS_MODULE=build_test.settings.docker
+      - DEBUG=1
+      - POSTGRES_DB=waf_pg_db
+      - POSTGRES_USER=waf_pg_db
+      - POSTGRES_PASSWORD=waffity
+      - POSTGRES_HOST=db
+      - POSTGRES_PORT=5432
+      - REDIS_URL=redis://redis:6379/0
+      - EMAIL_HOST=mailhog
+      - EMAIL_PORT=1025
+    depends_on:
+      - db
+      - redis
+      - mailhog
+
+volumes:
+  postgres_data: 

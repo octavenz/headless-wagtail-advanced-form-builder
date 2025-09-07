@@ -33,7 +33,7 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Framework :: Django :: 4.2",
     "Framework :: Django :: 5.0",
-    "Framework :: Wagtail :: 6.4",
+    "Framework :: Wagtail :: 6",
     "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Content Management System",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]

@@ -5,7 +5,7 @@
 
 **A powerful headless-first Wagtail Advanced Form Builder with complete REST API for modern frontend frameworks like React, Vue, Angular, and mobile applications.**
 
-> **🚨 Important**: This is a separate package from the original `wagtail-advanced-form-builder`. Choose `headless-waf-builder` for modern headless/API-first applications, or the original for traditional Wagtail template only usage.
+> **🚨 Important**: This is a separate package from the original `wagtail-advanced-form-builder`. Choose `headless-wagtail-advanced-form-builder` for modern headless/API-first applications, or the original for traditional Wagtail template only usage.
 
 ## 🚀 Headless API Features
 
@@ -44,11 +44,11 @@ await fetch('/api/form_by_path/', {
 
 # Versions
 
-This package currently only supports Wagtail 6 above.
+This package currently only supports Wagtail 6.4 above.
 
 ### Version 1.0.0
 
-**Brand new headless API capabilities** for use with Wagtail version 6.X.X
+**Brand new headless API capabilities** for use with Wagtail version 6.4.X
 - **🎯 Complete Headless API** with Django Ninja for modern frontend frameworks
 - **📝 Full Schema Models** for all form fields and pages with Pydantic validation
 - **🔌 RESTful APIs** for form retrieval, submission, and validation

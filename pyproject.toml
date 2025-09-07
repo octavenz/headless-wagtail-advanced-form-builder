@@ -33,15 +33,15 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Framework :: Django :: 4.2",
     "Framework :: Django :: 5.0",
-    "Framework :: Wagtail :: 6",
+    "Framework :: Wagtail :: 6.4",
     "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Content Management System",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 requires-python = ">=3.8"
 dependencies = [
-    "Django>=4.2",
-    "Wagtail>=6",
-    "wagtailextraicons",
+    "Django>=4.2",       # Django 4.2 minimum required version
+    "Wagtail>=6.4",      # Wagtail 6.4 minimum required version
+    "wagtailextraicons", # Octave NZ's custom icons for Wagtail
     "django-ninja",      # Core requirement for headless API
     "pydantic>=2.0",     # For schema validation
     "psycopg[binary]",   # PostgreSQL adapter (modern psycopg v3)

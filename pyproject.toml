@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "headless-waf-builder"
-version = "1.0.0"
+version = "1.0.0beta3"
 description = "Headless Wagtail Advanced Form Builder - Complete REST API for modern frontend frameworks"
 readme = "README.md"
 license = {text = "BSD"}

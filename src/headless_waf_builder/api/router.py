@@ -118,7 +118,7 @@ def form_by_path(request, data: FormPostSchema):
             # Validate the token
             recaptcha_response = submit(
                 recaptcha_token,
-                settings.RECAPTCHA_PRIVATE_KEY,
+                settings.GOOGLE_RECAPTCHA_PRIVATE_KEY,
                 client_ip
             )
 

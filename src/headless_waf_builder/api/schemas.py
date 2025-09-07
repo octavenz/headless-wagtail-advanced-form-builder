@@ -251,9 +251,9 @@ class BaseFormPageSchema(Schema):
             return obj.google_recaptcha_public_key
 
         if obj.use_google_recaptcha:
-            if hasattr(settings, 'RECAPTCHA_PUBLIC_KEY'):
-                return settings.RECAPTCHA_PUBLIC_KEY
-            logging.warning('RECAPTCHA_PUBLIC_KEY need to be set in your settings')
+            if hasattr(settings, 'GOOGLE_RECAPTCHA_PUBLIC_KEY'):
+                return settings.GOOGLE_RECAPTCHA_PUBLIC_KEY
+            logging.warning('GOOGLE_RECAPTCHA_PUBLIC_KEY need to be set in your settings')
             return None
         return None
 

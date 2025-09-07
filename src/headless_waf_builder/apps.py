@@ -9,7 +9,7 @@ class HeadlessWafBuilderConfig(AppConfig):
     default_auto_field = 'django.db.models.AutoField'
 
     def ready(self):
-        # Handling Django recaptcha required RECAPTCHA_PUBLIC_KEY & RECAPTCHA_PRIVATE_KEY
+        # Handling Django recaptcha required GOOGLE_RECAPTCHA_PUBLIC_KEY & GOOGLE_RECAPTCHA_PRIVATE_KEY
         # as this will be need to set in project django settings
         if not hasattr(settings, 'SILENCED_SYSTEM_CHECKS'):
             setattr(settings, 'SILENCED_SYSTEM_CHECKS', ['django_recaptcha.recaptcha_test_key_error'])

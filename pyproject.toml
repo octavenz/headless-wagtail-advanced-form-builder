@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "headless-waf-builder"
-version = "1.0.0beta3"
+version = "0.0.1beta1"
 description = "Headless Wagtail Advanced Form Builder - Complete REST API for modern frontend frameworks"
 readme = "README.md"
 license = {text = "BSD"}
@@ -50,29 +50,9 @@ dependencies = [
     "redis",             # For Celery backend
 ]
 
-[project.optional-dependencies]
-dev = [
-    "django-extensions",
-    "pytest",
-    "pytest-django",
-    "pytest-cov",
-    "black",
-    "isort",
-    "flake8",
-    "pre-commit",
-    "mkdocs",
-    "mkdocs-material",
-]
-test = [
-    "pytest",
-    "pytest-django",
-    "pytest-cov",
-    "coverage",
-]
-
 [project.urls]
 Homepage = "https://github.com/octavenz/headless-wagtail-advanced-form-builder"
-Documentation = "https://octavenz.github.io/headless-wagtail-advanced-form-builder/"
+Documentation = "https://github.com/octavenz/headless-wagtail-advanced-form-builder/blob/master/README.md"
 Repository = "https://github.com/octavenz/headless-wagtail-advanced-form-builder"
 "Bug Tracker" = "https://github.com/octavenz/headless-wagtail-advanced-form-builder/issues"
 Changelog = "https://github.com/octavenz/headless-wagtail-advanced-form-builder/blob/main/CHANGELOG.md"
@@ -89,30 +69,3 @@ headless_waf_builder = [
     "static/**/*",
     "migrations/*.py",
 ]
-
-# Development tools configuration
-[tool.black]
-line-length = 88
-target-version = ['py38']
-include = '\.pyi?$'
-extend-exclude = '''
-/(
-  # directories
-  migrations
-  | venv
-  | env
-  | .env
-  | .venv
-)/
-'''
-
-[tool.isort]
-profile = "black"
-multi_line_output = 3
-line_length = 88
-skip = ["migrations", "venv", "env", ".env", ".venv"]
-
-[tool.pytest.ini_options]
-DJANGO_SETTINGS_MODULE = "build_test.settings.dev"
-python_files = ["tests.py", "test_*.py", "*_tests.py"]
-addopts = "--cov=headless_waf_builder --cov-report=html --cov-report=term-missing" 
